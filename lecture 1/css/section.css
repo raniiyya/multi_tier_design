@@ -1,0 +1,22 @@
+.section {
+    background: white;
+    margin: 10px 0;
+    box-shadow: 0 0 5px #ddd;
+    border-radius: 10px;
+  }
+  
+  .section__header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid #f4f4f4;
+    padding: 20px;
+  }
+  
+  .section__title {
+    margin: 0;
+    color: #222;
+  }
+  
+  .section__body {
+    padding: 20px;
+  }
