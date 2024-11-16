@@ -10,6 +10,7 @@
 		bindButtonEvents();
 	};
 
+	// it creates a HTML string and add it into out HTML content
 	const renderTasks = () => {
 		const taskToHTML = (task) => `
       <li class="
@@ -147,7 +148,7 @@
 	};
 
 	const afterFormSubmit = (newTask) => {
-		const newTaskContent = newTask.value.trim();
+		const newTaskContent = newTask.value.trim(); // trims whitespaces in a string
 
 		newTask.focus();
 		newTask.value = "";
@@ -158,7 +159,7 @@
 	};
 
 	const onFormSubmit = (event) => {
-		event.preventDefault();
+		event.preventDefault(); //to prevent reloading the page whenever we add a new task
 
 		const newTask = document.querySelector(".js-newTask");
 
